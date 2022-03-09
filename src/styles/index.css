@@ -1,0 +1,169 @@
+:root{
+  --colorbg: #0e1d0e;
+  --secondbg: #203a1e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--colorbg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container__main{
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  border: 1px solid rgb(126, 128, 0);
+}
+
+/* UTILITIES */
+
+.text-center-white{
+  text-align: center;
+  color: white;
+}
+
+.border_b{
+  width: 50px;
+  border: 1px solid rgb(126, 128, 0);
+  margin: 40px auto;
+}
+/* HOME */
+
+.home{
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+
+.home__title{
+  color: white;
+}
+.home__subtitle{
+  color: white;
+}
+
+.home__card__container{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Card__home{
+  background-color: var(--secondbg);
+  border-radius: 10px;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Card__home__title{
+  text-align: center;
+  color: white;
+}
+
+.home__card__img{
+  width: 80%;
+}
+
+.Card_home_temperaturas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.link__card{
+  width: 20%;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.link__card:hover{
+  transform: scale(1.05)
+}
+
+.home__grafico{
+  width: 50%;
+  margin: 50px auto;
+  background-color: var(--secondbg);
+}
+
+@media (max-width: 450px) {
+  .link__card{
+    width: 95%;
+  }
+  .home__grafico{
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--secondbg);
+  }
+}
+
+/* CARD DAY */
+.Conteiner__card__day{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color:white;
+}
+.Card__day{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items:center;
+  min-width: 20%;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: var(--secondbg);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 1.5rem;
+}
+.Card__day > span {
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+.btn__link{
+  text-decoration: none;
+  text-align: center;
+  color:white;
+  background-color: rgb(18, 90, 28);
+  font-size: 1.3rem;
+  width: 12vw;
+  border-radius: 5px;
+  margin: 5px;
+  margin-top: -10px;
+}
+.btn__link:hover{
+  background-color: #19a80e;
+}
+.cajaDia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
